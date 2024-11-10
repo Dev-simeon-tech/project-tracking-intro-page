@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'barlow-regular';
+        src: url('../fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'barlow-bold';
+        src: url('../fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf');
+    }
+}
+@media(max-width:786px){
+    .primary-navigation[aria-expanded='true']{
+        @apply fixed block w-[90%] bg-white top-24 z-10 left-1/2 -translate-x-1/2 shadow-xl rounded 
+    }
+
+}
+@layer components{
+    .nav-list > li:not(:last-child){
+        @apply text-center text-Very-Dark-Blue text-2xl font-barlow-bold tracking-wider space-y-10
+    }
+    .nav-list > li{
+        @apply lg:cursor-pointer lg:hover:underline
+    }
+    .description,.logo-text{
+        @apply text-Grayish-Blue tracking-widest 
+    }
+}

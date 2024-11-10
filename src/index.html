@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link rel="stylesheet" href="main.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body class=" relative font-barlow-regular overflow-x-hidden ">
+    <header class="flex p-6 items-center justify-between relative lg:w-[90%] lg:p-0 lg:pt-6 lg:mx-auto">
+      
+      <a href="/src/index.html" class="cursor-pointer">
+
+        <img src="../images/logo.svg" alt="logo">
+      </a>
+      
+      <img src="../images/icon-hamburger.svg" class="mobile-nav-toggle lg:hidden" alt="" aria-controls="nav-list"  >
+
+      <nav class="hidden lg:aria-expanded:relative primary-navigation lg:block " aria-expanded="false">
+        <ul class="nav-list space-y-3 p-6 lg:flex lg:items-center lg:space-y-0 lg:space-x-8 ">
+          <li>Product</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <hr class="bg-Grayish-Blue lg:rounded-full lg:h-2 lg:w-2">
+          <li class="text-Grayish-Blue text-center text-2xl tracking-wider">Login</li>
+        </ul>
+      </nav>
+      <!-- header background -->
+    </header>
+    <div class="absolute bg-Light-Grayish-Blue rounded-bl-[3rem] w-1/2 h-1/2 lg:h-3/5 right-0 top-0 -z-20"></div>
+
+    <main class="mt-9 lg:w-[90%] lg:mx-auto lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
+      <div class="relative ">
+        <img src="../images/illustration-devices.svg" class="max-w-[110%] lg:max-w-[150%]"   alt="">
+      </div>
+      <div class="w-[90%]  mt-20 mx-auto">
+        <div class="logo flex text-2xl gap-4 ">
+          <span class="bg-Very-Dark-Blue px-3 font-barlow-bold rounded-xl text-white">New</span>
+          <p class="logo-text">Monograph Dashboard</p>
+        </div>
+
+        <h1 class="text-Very-Dark-Blue text-[3rem] font-barlow-bold uppercase leading-10 pt-3 lg:text-[5rem] lg:leading-[5rem]">Powerful insights into your team</h1>
+        <p class="pt-8 pb-9 text-3xl text-Dark-Grayish-Blue lg:text-4xl">Project planning and time tracking for agile teams</p>
+
+        <div class="flex items-center  text-lg gap-2 uppercase flex-wrap mb-4">
+          <button class="bg-Red py-3 px-4 rounded-md text-white lg:hover:bg-hover-red transition-colors duration-500 font-barlow-bold tracking-widest uppercase">Schedule a demo</button>
+          <p class="description">to see a live preview</p>
+        </div>
+
+      </div>
+    </main>
+  
+  <script src="navigation.js"></script>
+</body>
+</html>
