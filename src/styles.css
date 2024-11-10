@@ -5,11 +5,11 @@
 @layer base{
     @font-face {
         font-family: 'barlow-regular';
-        src: url('../fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
+        src: url('./fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf');
     }
     @font-face {
         font-family: 'barlow-bold';
-        src: url('../fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf');
+        src: url('./fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf');
     }
 }
 @media(max-width:786px){

@@ -7,11 +7,11 @@ const showNavigation = (nav,toggleBtn)=>{
 
         if(visibility === 'false'){
             nav.setAttribute('aria-expanded',true);
-            toggleBtn.src = '../images/icon-close.svg'
+            toggleBtn.src = './images/icon-close.svg'
         }
         else{
             nav.setAttribute('aria-expanded',false);
-            toggleBtn.src = '../images/icon-hamburger.svg' 
+            toggleBtn.src = './images/icon-hamburger.svg' 
         }
 
     })
